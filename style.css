@@ -1,0 +1,63 @@
+/* comments look like this in CSS files */
+
+#heading{
+	background-color: #D0A9F5; /* some shade of cyan */
+	color: #0404B4;
+	padding: 1em 0.5em;
+}
+
+#heading:hover{
+	font-weight: bold;
+	color: #ffffff;
+}
+
+#navbar {
+  background-color: #000000; /* black */
+  color: #ffffff;            /* white */
+  margin: 0;
+  padding: 0.5em 0; /* 0.5em padding on top/bottom, 0 padding on left/right */
+}
+
+#navbar a {
+  margin: 0;
+  padding: 0.5em;
+  color: #ffffff;
+  text-decoration: overline;
+}
+
+#navbar a:hover {
+	font-weight: bolder;
+}
+
+main {
+  padding: 0.5em;
+}
+
+#title{
+	font-variant: small-caps;
+}
+
+body{
+	background-color: #E0F8F7;
+	height: 100%;
+	width: 100%;
+}
+
+p{
+	font-size: 2em;
+}
+
+span{
+	font-variant: small-caps;
+}
+
+img{
+	text-align: right;
+	border-style: ridge;
+}
+
+.interests{
+	text-align: left;
+}
+
+
