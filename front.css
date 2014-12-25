@@ -93,10 +93,12 @@ h2 {
 	right: 0;
 	margin: 0 auto;
 	background-color: #EAF9FF;
+	z-index: 2;
 }
 
-#cdontainer {
+#container {
 	background-color: #EEEEEE;
+	z-index: 1;
 }
 
 .project {
@@ -107,6 +109,8 @@ h2 {
 	height: auto;
 	width: 390px;
 	float: left;
+
+	margin-bottom: 10px;
 }
 
 .project a img {
