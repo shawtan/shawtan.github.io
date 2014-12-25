@@ -303,8 +303,8 @@ a, a:visited {
   color: #0C1B78;
   text-decoration: none;
   border-bottom: 1px solid #27B1EC;
-  display: inline-block;
   height: 1.2em;
+  display: inline-block;
 }
 
 a:hover, a:focus {
@@ -334,6 +334,9 @@ h2 {
 .title {
 	font-size: 22px;
 	padding: 40px 20px 70px;
+}
+
+.title a {
 }
 
 @media only screen and (max-width: 40rem) {
@@ -371,13 +374,13 @@ h2 {
     float: left;
 }
 
-.project img {
-    display: block;
-    margin: 5px;
+.project a img {
+    width: 100%;
 }
 
-.project a:hover img {
-    border:1px solid #0000ff;
+.project a {
+	display: inline;
+    border-style: none;
 }
 
 .lang {
