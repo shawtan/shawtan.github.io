@@ -288,14 +288,11 @@ html, body {
 
 body {
   text-align: center;
-  display: flex;
   align-items: center;
-  display: -webkit-box;
-  -webkit-box-align: center;
-
-  background: #CAEFFF; /* some shade of cyan */
+  background: #CAEFFF;
   color: #02212E;
-  font: 300 22px/1.5 'Fira Sans', sans-serif;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 300;
 }
 
 a, b {
@@ -306,23 +303,36 @@ a, a:visited {
   color: #0C1B78;
   text-decoration: none;
   border-bottom: 1px solid #27B1EC;
+  display: inline-block;
+  height: 1.2em;
 }
+
 a:hover, a:focus {
   color: #3953EF;
   border-color: #2952EF;
 }
 
-img {
+h1 {
+	font-size: 22px;
+}
+
+h2 {
+	font-size: 18px;
+}
+
+#profile{
 	margin-bottom: 20px;
+	height: 400px;
 }
 
 .outer {
-	max-width: 1200px;
+	max-width: 800px;
 	margin: 0 auto;
 	max-height: 100%;	
 }
 
-.content {
+.title {
+	font-size: 22px;
 	padding: 40px 20px 70px;
 }
 
@@ -332,6 +342,44 @@ img {
   }
 }
 
-.links a {
-	margin: 0 10px;
+#links a {
+	font-size: 18px;
+	padding: 0 5px;
+	margin: 5px;
+}
+
+#links #name {
+	font-weight: bold;
+	font-size: 20px;
+}
+
+#link-current {
+	background-color: #93D5F2;
+}
+
+.project{
+	background-color: #88B8CD;
+    margin: 5px;
+    border: 3px solid #298FBB;
+    height: auto;
+    width: 45%;
+    float: left;
+}
+
+.project img {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.project a:hover img {
+    border:1px solid #0000ff;
+}
+
+.lang {
+	font-weight: bold;
+}
+
+.describe {
+	text-align: left;
 }

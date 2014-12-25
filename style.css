@@ -11,21 +11,21 @@
 	color: #ffffff;
 }
 
-#navbar {
+#links {
   background-color: #000000; /* black */
   color: #ffffff;            /* white */
   margin: 0;
   padding: 0.5em 0; /* 0.5em padding on top/bottom, 0 padding on left/right */
 }
 
-#navbar a {
+#links a {
   margin: 0;
   padding: 0.5em;
   color: #ffffff;
   text-decoration: overline;
 }
 
-#navbar a:hover {
+#links a:hover {
 	font-weight: bolder;
 }
 
