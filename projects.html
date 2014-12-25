@@ -4,17 +4,45 @@
   <title>
     Shaw Tan
   </title>
+  <link type="text/css" rel="stylesheet" href="normalize.css"/>
   <link type="text/css" rel="stylesheet" href="front.css"/>
   <link href='http://fonts.googleapis.com/css?family=Fira+Sans:300,400' rel='stylesheet' type='text/css'>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="masonry.pkgd.min.js"></script>
+  <script src="imagesloaded.pkgd.min.js"></script>
+  <script>
+  /*
+  var container = document.querySelector('#container');
+var msnry;
+// initialize Masonry after all images have loaded
+imagesLoaded( container, function() {
+  msnry = new Masonry( container, {
+      columnWidth: 400,
+      itemSelector: '.project'
+    } );
+});
+*/
+$(document).ready(function(){
+  var $container = $('#container');
+  $container.imagesLoaded( function() {
+    $container.masonry({
+      columnWidth: 400,
+      itemSelector: '.project'
+    });
+  });});
+  </script>
+
 </head>
 <body>
   <header>
-    <ul id="links"> 
-      <li><a href="index.html" id="name">Shaw Tan</a></li>
-      <li><a href="resume.html">Resume</a></li>
-      <li><a href="projects.html" id="link-current">Projects</a></li>
-      <li><a href="https://github.com/tanx8">Github</a></li>
-    </ul>
+    <div id="navbar">
+      <ul id="links"> 
+        <li><a href="index.html" id="name">Shaw Tan</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="projects.html" id="link-current">Projects</a></li>
+        <li><a href="https://github.com/tanx8">Github</a></li>
+      </ul>
+    </div>
   </header>
 
   <main>
@@ -22,28 +50,44 @@
 
       <p>Here are some of the programming projects that I have worked on. I have found all of them to be fun learning experiences.</p>
 
-      <div class="project">
-        <a href="projects/JazzInsanity.jar">
-          <img src="projects/jazzinsanity.png">
-        </a>
-        <div class="lang">Java</div>
-        <div class="describe">Travel through space while avoiding the dangerous squares and collecting other round shapes.</div>
+      <div id="container">
+        <div class="project">
+          <a href="index.html">
+            <img src="projects/website.png">
+          </a>
+          <div class="describe">
+            <div class="lang">HTML, CSS</div>
+            My personal website created using HTML and CSS.
+          </div>
+        </div>
+        <div class="project">
+          <a href="projects/JazzInsanity.jar">
+            <img src="projects/jazzinsanity.png">
+          </a>
+          <div class="describe">
+            <div class="lang">Java</div>
+            Travel through space while avoiding the dangerous squares and collecting other round shapes.
+          </div>
+        </div>
+        <div class="project">
+          <a href="projects/Tetris.exe">
+            <img src="projects/tetris vb 4p.png">
+          </a>
+          <div class="describe">
+            <div class="lang">Visual Basic</div>
+            Play Tetris with up to four of your friends on the same keyboard. Sabatoge your friends while they sit next to you, in a battle for survival!
+          </div>
+        </div>     
+        <div class="project">
+          <a href="projects/Tetris P.xlsm">
+            <img src="projects/tetris excel small.png">
+          </a>
+          <div class="describe">
+            <div class="lang">Visual Basic for Applications</div>
+            The classic Tetris game recreated in Microsoft Excel!
+          </div>
+        </div>
       </div>
-      <div class="project">
-        <a href="projects/Tetris.exe">
-          <img src="projects/tetris vb 4p.png">
-        </a>
-        <div class="lang">Visual Basic</div>
-        <div class="describe">Play Tetris with up to four of your friends on the same keyboard. Sabatoge your friends while they sit next to you, in a battle for survival!</div>
-      </div>     
-      <div class="project">
-        <a href="projects/Tetris P.xlsm">
-          <img src="projects/tetris excel small.png">
-        </a>
-        <div class="lang">Visual Basic for Applications</div>
-        <div class="describe">The classic Tetris game recreated in Microsoft Excel!</div>
-      </div>
-
     </div>
   </main>
 
