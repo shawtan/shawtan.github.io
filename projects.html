@@ -11,25 +11,26 @@
   <script src="masonry.pkgd.min.js"></script>
   <script src="imagesloaded.pkgd.min.js"></script>
   <script>
-  /*
-  var container = document.querySelector('#container');
-var msnry;
-// initialize Masonry after all images have loaded
-imagesLoaded( container, function() {
-  msnry = new Masonry( container, {
-      columnWidth: 400,
-      itemSelector: '.project'
-    } );
-});
-*/
-$(document).ready(function(){
-  var $container = $('#container');
-  $container.imagesLoaded( function() {
-    $container.masonry({
-      columnWidth: 400,
-      itemSelector: '.project'
+  $(document).ready(function(){
+    var $container = $('#container');
+    $container.imagesLoaded( function() {
+      $container.masonry({
+        columnWidth: 400,
+        itemSelector: '.project'
+      });
     });
-  });});
+  });
+
+  $(function() {
+    $(".gif").hover(
+      function() {
+        $(this).attr("src","projects/falling apples.gif");
+      },
+      function() {
+        $(this).attr("src","projects/falling apples.png");
+      }
+    );
+  });
   </script>
 
 </head>
@@ -90,12 +91,11 @@ $(document).ready(function(){
         </div>
         <div class="project">
           <a href="projects/falling apples.gif">
-            <img class="base" src="projects/falling apples.png">
-            <img class="cover" src="projects/falling apples.gif">
+            <img class="gif" src="projects/falling apples.png">
           </a>
           <div class="describe">
             <div class="lang">Processing</div>
-            A short animation created using only Processing, a language build on Java.
+            A short animation created in Processing, a language built on Java.
           </div>
         </div>
       </div>
