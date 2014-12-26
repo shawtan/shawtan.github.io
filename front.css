@@ -42,7 +42,7 @@ h2 {
 	font-size: 18px;
 }
 
-#profile{
+#profile-pic {
 	margin-bottom: 20px;
 	height: 400px;
 }
@@ -83,6 +83,8 @@ h2 {
 
 #link-current {
 	background-color: #93D5F2;
+	border-left: 5px solid #93D5F2;
+	border-right: 5px solid #93D5F2;
 }
 
 #navbar {
@@ -97,7 +99,6 @@ h2 {
 }
 
 #container {
-	background-color: #EEEEEE;
 	z-index: 1;
 }
 
@@ -109,18 +110,42 @@ h2 {
 	height: auto;
 	width: 390px;
 	float: left;
+	position: relative;
 }
 
-.project a img {
+.project img {
 	width: 100%;
 }
 
 .project a {
+	position: relative;
 	display: inline;
 	border-style: none;
 	color: none;
 	border: none;
 }
+
+span.dl-text {
+	position: absolute;
+	background: rbga(0,0,0,0.5);
+	color: red;
+	display: table;
+	left: 0;
+	top: 0;
+	width: 390px;
+	height: 200px;
+}
+
+span.dl-text span {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.dl-text:hover {
+	opacity: 1;
+}
+
 
 .lang {
 	font-weight: bold;
@@ -131,5 +156,6 @@ h2 {
 	margin: 5px;
 	text-align: left;
 }
+
 
 
