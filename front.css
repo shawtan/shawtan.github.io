@@ -134,6 +134,7 @@ span.dl-text {
 	top: 0;
 	width: 390px;
 	height: 200px;
+	opacity: 0;
 }
 
 span.dl-text span {
@@ -142,9 +143,6 @@ span.dl-text span {
 	vertical-align: middle;
 }
 
-.dl-text:hover {
-	opacity: 1;
-}
 
 
 .lang {

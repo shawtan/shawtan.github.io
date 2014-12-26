@@ -29,7 +29,7 @@
       function() {
         $(this).attr("src","projects/falling apples.png");
       }
-    );
+      );
   });
   </script>
 
@@ -58,8 +58,17 @@
             <span class="dl-text"><span>My website which you are browsing right now.</span></span>
           </a>
           <div class="describe">
-            <div class="lang">HTML, CSS</div>
+            <div class="lang">HTML, CSS, JavaScript</div>
             My personal website created using HTML and CSS.
+          </div>
+        </div>
+        <div class="project">
+          <a href="https://github.com/tanx8/AdvancedSudoku">
+            <img src="projects/sudoku.png">
+          </a>
+          <div class="describe">
+            <div class="lang">Java</div>
+            The sudoku game you thought you knew, but more complex. Solve puzzles with up to 16 different digits, in grids that are no longer neat, tidy squares. (in progress)
           </div>
         </div>
         <div class="project">
@@ -69,6 +78,26 @@
           <div class="describe">
             <div class="lang">Java</div>
             Travel through space while avoiding the dangerous squares and collecting other round shapes.
+          </div>
+        </div>
+        <div class="project">
+          <a href="javascript:
+          (function(){
+          divs = document.getElementsByTagName('div');
+          for (var i = 0; i < divs.length; i++){
+          if ((divs[i].id).match('poke_live_item_') != null){
+          var id;
+          id = (divs[i].id).substring(15);
+          var e = document.getElementById('poke_live_item_'+id);
+          var index = (e.innerHTML).indexOf('ajaxify');
+          var end = (e.innerHTML).indexOf('\&quot;', (index+9));
+          var link = 'http:\\\\www.facebook.com'+((e.innerHTML).substring(index+9,end)).replace(/amp;/g,'');
+          var w = window.open(link);}} })();">
+          <img src="projects/poke.bmp">
+          </a>
+          <div class="describe">
+            <div class="lang">JavaScript</div>
+            A script that will help you poke back everyone that has poked you on facebook.
           </div>
         </div>
         <div class="project">
@@ -86,7 +115,7 @@
           </a>
           <div class="describe">
             <div class="lang">Visual Basic for Applications</div>
-            The classic Tetris game recreated in Microsoft Excel!
+            The classic Tetris game recreated in Microsoft Excel for Windows!
           </div>
         </div>
         <div class="project">
