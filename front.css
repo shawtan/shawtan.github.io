@@ -9,7 +9,13 @@ html, body {
 body {
 	text-align: center;
 	align-items: center;
-	background: #EAF9FF;
+	/* Cicada stripes pattern by Randy Merrill */
+	background-color: #EAF9FF;
+	background-image: linear-gradient(90deg, rgba(39,177,236,.07) 50%, transparent 50%),
+	linear-gradient(90deg, rgba(39,177,236,.13) 50%, transparent 50%),
+	linear-gradient(90deg, transparent 50%, rgba(39,177,236,.17) 50%),
+	linear-gradient(90deg, transparent 50%, rgba(39,177,236,.19) 50%);
+	background-size: 13px, 29px, 37px, 53px;
 	color: #02212E;
 	color: #000000;
 	font-family: 'Fira Sans', sans-serif;
@@ -48,9 +54,12 @@ h2 {
 }
 
 .outer {
+	background-color: #EAF9FF;
+	padding: 40px;
 	max-width: 800px;
 	margin: 0 auto;
 	max-height: 100%;
+	border-radius: 25px;
 }
 
 .title {
@@ -69,9 +78,9 @@ h2 {
 
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 480px) {
 	html {
-		width: 400px;
+		width: 480px;
 	}
 }
 

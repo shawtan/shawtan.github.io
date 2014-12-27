@@ -1,0 +1,18 @@
+background:
+linear-gradient(135deg, #E0F0FF 25%, transparent 25%) -50px 0,
+linear-gradient(225deg, #E0F0FF 25%, transparent 25%) -50px 0,
+linear-gradient(315deg, #E0F0FF 25%, transparent 25%),
+linear-gradient(45deg, #E0F0FF 25%, transparent 25%);	
+background-size: 100px 100px;
+background-color: #EAF9FF;
+
+
+
+background: #E0F0FF;
+background: 
+linear-gradient(115deg, transparent 75%, rgba(180,210,255,0.1) 75%) 0 0,
+linear-gradient(245deg, transparent 75%, rgba(180,210,255,.1) 75%) 0 0,
+linear-gradient(115deg, transparent 75%, rgba(180,210,255,0.1) 75%) 30px -60px,
+linear-gradient(245deg, transparent 75%, rgba(180,210,255,.1) 75%) 30px -60px,
+#EAF9FF;
+background-size: 60px 120px;
