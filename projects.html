@@ -13,6 +13,8 @@
   <script src="imagesloaded.pkgd.min.js"></script>
   <script>
   $(document).ready(function(){
+    $(".outer").css("padding-top", $("#navbar").height());
+
     var $container = $('#container');
     $container.imagesLoaded( function() {
       $container.masonry({
