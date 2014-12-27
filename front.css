@@ -122,13 +122,12 @@ h2 {
 .project {
 	background-color: #88B8CD;
 
-	margin: 2px;
+	margin: 2px auto;
 	border: 3px solid #298FBB;
 	height: auto;
 	width: 390px;
 	float: left;
 	position: relative;
-	margin: 0 auto;
 }
 
 .project img {
