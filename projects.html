@@ -4,6 +4,7 @@
   <title>
     Shaw Tan
   </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link type="text/css" rel="stylesheet" href="normalize.css"/>
   <link type="text/css" rel="stylesheet" href="front.css"/>
   <link href='http://fonts.googleapis.com/css?family=Fira+Sans:300,400' rel='stylesheet' type='text/css'>
@@ -16,7 +17,8 @@
     $container.imagesLoaded( function() {
       $container.masonry({
         columnWidth: 400,
-        itemSelector: '.project'
+        itemSelector: '.project',
+        isFitWidth: true
       });
     });
   });

@@ -63,7 +63,12 @@ h2 {
 	.content {
 		padding: 40px 20px;
 	}
+	html {
+		width: devie-width;
+	}
 }
+
+
 
 #links {
 	list-style-type: none;
@@ -100,6 +105,7 @@ h2 {
 
 #container {
 	z-index: 1;
+	margin: 0 auto;
 }
 
 .project {
@@ -111,6 +117,7 @@ h2 {
 	width: 390px;
 	float: left;
 	position: relative;
+	margin: 0 auto;
 }
 
 .project img {
