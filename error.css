@@ -9,25 +9,10 @@ html, body {
 body {
 	text-align: center;
 	align-items: center;
-	/* Cicada stripes pattern by Randy Merrill */
 	background-color: #EAF9FF;
-	background-image: linear-gradient(90deg, rgba(39,177,236,.07) 50%, transparent 50%),
-	linear-gradient(90deg, rgba(39,177,236,.13) 50%, transparent 50%),
-	linear-gradient(90deg, transparent 50%, rgba(39,177,236,.17) 50%),
-	linear-gradient(90deg, transparent 50%, rgba(39,177,236,.19) 50%);
-	background-size: 13px, 29px, 37px, 53px;
-	color: #02212E;
 	color: #000000;
 	font-family: 'Fira Sans', sans-serif;
 	font-weight: 300;
-}
-
-body {
-	background-color: #EAF9FF;
-	background-color: #000000;
-	background-image: none;
-	background-size: auto;
-
 }
 
 a, b {
@@ -55,10 +40,9 @@ h2 {
 	font-size: 18px;
 }
 
-#profile-pic {
-	padding-top: 20px;
-	margin-bottom: 20px;
-	height: 400px;
+#error-pic {
+	padding-top: 40px;
+	height: 600px;
 }
 
 .outer {
@@ -130,64 +114,3 @@ h2 {
 		position: static;
 	}
 }
-
-#container {
-	z-index: 1;
-	margin: 0 auto;
-}
-
-.project {
-	background-color: #88B8CD;
-
-	margin: 2px auto;
-	border: 3px solid #298FBB;
-	height: auto;
-	width: 390px;
-	float: left;
-	position: relative;
-}
-
-.project img {
-	width: 100%;
-}
-
-.project a {
-	position: relative;
-	display: inline;
-	border-style: none;
-	color: none;
-	border: none;
-}
-
-span.dl-text {
-	position: absolute;
-	background: rbga(0,0,0,0.5);
-	color: red;
-	display: table;
-	left: 0;
-	top: 0;
-	width: 390px;
-	height: 200px;
-	opacity: 0;
-}
-
-span.dl-text span {
-	display: table-cell;
-	text-align: center;
-	vertical-align: middle;
-}
-
-
-
-.lang {
-	font-weight: bold;
-	text-align: center;
-}
-
-.describe {
-	margin: 5px;
-	text-align: left;
-}
-
-
-
