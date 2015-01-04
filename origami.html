@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+  <title>
+    Shaw Tan
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link type="text/css" rel="stylesheet" href="css/normalize.css"/>
+  <link type="text/css" rel="stylesheet" href="css/front.css"/>
+  <link href='http://fonts.googleapis.com/css?family=Fira+Sans:300,400' rel='stylesheet' type='text/css'>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="js/masonry.pkgd.min.js"></script>
+  <script src="js/imagesloaded.pkgd.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    $(".outer").css("padding-top", $("#navbar").height());
+
+    var $container = $('#container');
+    $container.imagesLoaded( function() {
+      $container.masonry({
+        columnWidth: 400,
+        itemSelector: '.project',
+        isFitWidth: true
+      });
+    });
+  });
+  </script>
+
+</head>
+<body>
+  <header>
+    <div id="navbar">
+      <ul id="links"> 
+        <li><a href="index.html" id="name">Shaw Tan</a></li>
+        <li><a href="resume.html">Résumé</a></li>
+        <li><a href="projects.html" id="link-current">Projects</a></li>
+        <li><a href="https://github.com/tanx8">Github</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <div class="outer">
+
+      <p>Origami is the art of paper folding. It transforms an ordinary sheet of paper into something extraordinary. </p>
+
+      <div id="container">
+        <div class="project">
+          <img src="rsc/origami/swan.jpg">
+          <div class="describe">
+            <div class="lang">3D Origami Swan</div>
+          </div>
+        </div>
+        <div class="project">
+          <img src="rsc/origami/FIT.jpg">
+          <div class="describe">
+            <div class="lang">Five Intersecting Tetrahedra</div>
+          </div>
+        </div>
+        <div class="project">
+          <img src="rsc/origami/spring.jpg">
+          <div class="describe">
+            <div class="lang">Spring Into Action</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+  </footer>
+</body>
+</html>
