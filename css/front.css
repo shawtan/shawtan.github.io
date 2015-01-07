@@ -53,13 +53,26 @@ h2 {
 	height: 400px;
 }
 
-.outer {
+.outer, .footer{
 	background-color: #EAF9FF;
 	padding: 40px;
 	max-width: 800px;
 	margin: 0 auto;
-	max-height: 100%;
-	border-radius: 25px;
+	min-height: 100%;
+    border-radius: 20px;
+
+}
+
+main {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -0px;
+}
+
+.footer {
+    height: 60px;
+    margin-top: -30px;
 }
 
 .title {
@@ -149,6 +162,16 @@ h2 {
 	border-style: none;
 	color: none;
 	border: none;
+}
+
+.origami {
+	height: auto;
+	width: 200px;
+	float: left;
+	position: relative;
+}
+.origami img {
+	width: 100%;
 }
 
 span.dl-text {

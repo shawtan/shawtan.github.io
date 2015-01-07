@@ -18,8 +18,8 @@
     var $container = $('#container');
     $container.imagesLoaded( function() {
       $container.masonry({
-        columnWidth: 400,
-        itemSelector: '.project',
+        columnWidth: 200,
+        itemSelector: '.origami',
         isFitWidth: true
       });
     });
@@ -33,7 +33,8 @@
       <ul id="links"> 
         <li><a href="index.html" id="name">Shaw Tan</a></li>
         <li><a href="resume.html">Resume</a></li>
-        <li><a href="projects.html" id="link-current">Projects</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="origami.html" id="link-current">Origami</a></li>
         <li><a href="https://github.com/tanx8">Github</a></li>
       </ul>
     </div>
@@ -45,26 +46,33 @@
       <p>Origami is the art of paper folding. It transforms an ordinary sheet of paper into something extraordinary. </p>
 
       <div id="container">
-        <div class="project">
-          <img src="rsc/origami/swan.jpg">
-          <div class="describe">
-            <div class="lang">3D Origami Swan</div>
-          </div>
+        <div class="origami">
+          <img alt="3D Origami Swan" src="rsc/origami/swan.jpg">
         </div>
-        <div class="project">
-          <img src="rsc/origami/FIT.jpg">
-          <div class="describe">
-            <div class="lang">Five Intersecting Tetrahedra</div>
-          </div>
+        <div class="origami">
+          <img alt="Five Intersecting Tetrahedra" src="rsc/origami/FIT.jpg">
         </div>
-        <div class="project">
-          <img src="rsc/origami/spring.jpg">
-          <div class="describe">
-            <div class="lang">Spring Into Action</div>
-          </div>
+        <div class="origami">
+          <img alt="Spring Into Action" src="rsc/origami/spring.jpg">
+        </div>
+        <div class="origami">
+          <img alt="Small Origami Collection" src="rsc/origami/small.jpg">
+        </div>
+        <div class="origami">
+          <img alt="Origami Boat" src="rsc/origami/boat.jpg">
+        </div>
+        <div class="origami">
+          <img alt="Origami Crane" src="rsc/origami/crane.jpg">
+        </div>
+        <div class="origami">
+          <img alt="Origami Butterfly" src="rsc/origami/butterfly.jpg">
+        </div>
+        <div class="origami">
+          <img alt="Origami Flower" src="rsc/origami/flower.jpg">
         </div>
       </div>
     </div>
+    <div class="footer"></div>
   </main>
 
   <footer>
