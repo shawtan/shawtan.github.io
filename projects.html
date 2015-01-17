@@ -26,7 +26,16 @@
   });
 
   $(function() {
-    $(".gif").hover(
+
+    $("#geese").hover(
+      function() {
+        $(this).attr("src","rsc/projects/geese battle.gif");
+      },
+      function() {
+        $(this).attr("src","rsc/projects/geese battle.png");
+      }
+      );
+    $("#apples").hover(
       function() {
         $(this).attr("src","rsc/projects/falling apples.gif");
       },
@@ -104,6 +113,15 @@
           </div>
         </div>
         <div class="project">
+          <a href="https://github.com/sxtan/GeeseBattle">
+            <img id="geese" src="rsc/projects/geese battle.png">
+          </a>
+          <div class="describe">
+            <div class="lang">Java</div>
+            Compete against your friends over LAN to determine the cunniest goose.
+          </div>
+        </div>
+        <div class="project">
           <a href="https://github.com/sxtan/FBMasterPoker">
           <img src="rsc/projects/poke.bmp">
           </a>
@@ -132,20 +150,11 @@
         </div>
         <div class="project">
           <a href="https://github.com/sxtan/Falling-Apples">
-            <img class="gif" src="rsc/projects/falling apples.png">
+            <img id="apples" src="rsc/projects/falling apples.png">
           </a>
           <div class="describe">
             <div class="lang">Processing</div>
             A short animation created in Processing, a language built on Java. Mouseover the image to begin the animation.
-          </div>
-        </div>
-        <div class="project">
-          <a href="https://github.com/sxtan/GeeseBattle">
-            <img src="rsc/projects/geese battle.png">
-          </a>
-          <div class="describe">
-            <div class="lang">Java</div>
-            Compete against your friends over LAN to determine the cunniest goose.
           </div>
         </div>
       </div>
