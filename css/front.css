@@ -53,6 +53,12 @@ h2 {
 	height: 400px;
 }
 
+.outer {
+	overflow-y: auto;
+	top: 50px;
+	bottom: 0px;
+}
+
 .outer, .footer{
 	background-color: #EAF9FF;
 	padding: 40px;
@@ -67,7 +73,7 @@ main {
 	min-height: 100%;
 	height: auto !important;
 	height: 100%;
-	margin: 0 auto -0px;
+	margin: 0 auto;
 }
 
 .footer {

@@ -1,7 +1,85 @@
+<!doctype html>
 <html>
+<head>
+  <title>
+    Shaw Tan
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link type="text/css" rel="stylesheet" href="css/normalize.css"/>
+  <link type="text/css" rel="stylesheet" href="css/front.css"/>
+  <link href='http://fonts.googleapis.com/css?family=Fira+Sans:300,400' rel='stylesheet' type='text/css'>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="js/masonry.pkgd.min.js"></script>
+  <script src="js/imagesloaded.pkgd.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    $(".outer").css("padding-top", $("#navbar").height());
+
+    var $container = $('#container');
+    $container.imagesLoaded( function() {
+      $container.masonry({
+        columnWidth: 400,
+        itemSelector: '.project',
+        isFitWidth: true
+      });
+    });
+  });
+
+  $(function() {
+
+    $("#geese").hover(
+      function() {
+        $(this).attr("src","rsc/projects/geese battle.gif");
+      },
+      function() {
+        $(this).attr("src","rsc/projects/geese battle.png");
+      }
+      );
+    $("#apples").hover(
+      function() {
+        $(this).attr("src","rsc/projects/falling apples.gif");
+      },
+      function() {
+        $(this).attr("src","rsc/projects/falling apples.png");
+      }
+      );
+
+    $("#billards").hover(
+      function() {
+        $(this).attr("src","rsc/projects/billards2.png");
+      },
+      function() {
+        $(this).attr("src","rsc/projects/billards1.png");
+      }
+      );
+  });
+  </script>
+
+</head>
 <body>
-	<main>
-		words words words
-	</main>
+  <header>
+    <div id="navbar">
+      <ul id="links"> 
+        <li><a href="index.html" id="name">Shaw Tan</a></li>
+        <li><a href="about.html" id="link-current">About</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="origami.html">Origami</a></li>
+        <li><a href="https://github.com/tanx8">Github</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <div class="outer">
+    	<h1>About Me</h1>
+      <p>I am a computer science student currently studying at the University of Waterloo. I grew up in Toronto, where I decided to teach myself how to make a program. Ever since then, the field of computer science has interested me and I always want to learn and improve my technical skills.</p>
+      <p>In my spare time, I like making origami pieces. Lately I have been interested in making geometric solids using modular origami. I also love reading books and watching TV shows. I enjoy sci-fi and fantasy novels and lately I have been watching Hannibal, Arrow, Dominion and Suits.</p>
+  </div>
+
+  </main>
+
+  <footer>
+  </footer>
 </body>
 </html>
