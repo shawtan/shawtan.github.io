@@ -201,8 +201,16 @@ span.dl-text span {
 
 
 .lang {
-	font-weight: bold;
+	/*font-weight: bold;*/
+	font-style: italic;
 	text-align: center;
+}
+
+.proj-name {
+
+	font-weight: bold;
+	text-decoration: underline;
+	text-align: left;
 }
 
 .describe {
