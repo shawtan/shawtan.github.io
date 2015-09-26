@@ -106,6 +106,12 @@ main {
 #links {
 	list-style-type: none;
 	padding: 0;
+	position: relative;
+	display: inline-table;
+}
+
+#links:after {
+	content: ""; clear: both; display: block;
 }
 
 #links li {
@@ -113,6 +119,30 @@ main {
 	font-size: 18px;
 	margin: 0 10px;
 }
+
+#links ul {
+	display: none;
+	position: absolute;
+	top: 100%;
+	text-align: left;
+
+}
+
+#links .dropdown-btn {
+	float: none;
+	position: relative;
+	display: inline-block;
+}
+
+#links li:hover > ul {
+	display: block;
+}
+
+#drop-gallery {
+	background-color: #EAF9FF;
+	padding-left: 0;
+}
+
 
 #links #name {
 	font-weight: bold;

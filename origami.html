@@ -9,20 +9,10 @@
   <link type="text/css" rel="stylesheet" href="css/front.css"/>
   <link href='http://fonts.googleapis.com/css?family=Fira+Sans:300,400' rel='stylesheet' type='text/css'>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script src="js/masonry.pkgd.min.js"></script>
-  <script src="js/imagesloaded.pkgd.min.js"></script>
+
   <script>
   $(document).ready(function(){
     $(".outer").css("padding-top", $("#navbar").height());
-
-    var $container = $('#container');
-    $container.imagesLoaded( function() {
-      $container.masonry({
-        columnWidth: 200,
-        itemSelector: '.origami',
-        isFitWidth: true
-      });
-    });
   });
   </script>
 
@@ -35,42 +25,28 @@
         <li><a href="about.html">About</a></li>
         <li><a href="resume.html">Resume</a></li>
         <li><a href="projects.html">Projects</a></li>
-        <li><a href="origami.html" id="link-current">Origami</a></li>
+        <li class="dropdown-btn"><a href="#" id="link-current">Gallery</a>
+          <ul id="drop-gallery" class="dropdown-content">
+            <li><a href="origami.html">Origami</a></li>
+            <li><a href="flowers.html">Photography</a></li>
+          </ul>
+        </li>
         <li><a href="https://github.com/tanx8">Github</a></li>
       </ul>
     </div>
   </header>
 
   <main>
+
     <div class="outer">
+    <h1>Origami</h1>
 
       <p>Origami is the art of paper folding. It transforms an ordinary sheet of paper into something extraordinary. I enjoy the simplicity of paper folding, and I'd like to showcase some origami pieces I have made.</p>
 
       <div id="container">
-        <div class="origami">
-          <img alt="3D Origami Swan" src="rsc/origami/swan.jpg">
-        </div>
-        <div class="origami">
-          <img alt="Five Intersecting Tetrahedra" src="rsc/origami/FIT.jpg">
-        </div>
-        <div class="origami">
-          <img alt="Spring Into Action" src="rsc/origami/spring.jpg">
-        </div>
-        <div class="origami">
-          <img alt="Small Origami Collection" src="rsc/origami/small.jpg">
-        </div>
-        <div class="origami">
-          <img alt="Origami Boat" src="rsc/origami/boat.jpg">
-        </div>
-        <div class="origami">
-          <img alt="Origami Crane" src="rsc/origami/crane.jpg">
-        </div>
-        <div class="origami">
-          <img alt="Origami Butterfly" src="rsc/origami/butterfly.jpg">
-        </div>
-        <div class="origami">
-          <img alt="Origami Flower" src="rsc/origami/flower.jpg">
-        </div>
+
+<div style="width:800px;height:800px;text-align:center;margin:auto;" ><object width="800" height="800" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000"  codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"> <param name="flashvars" value="offsite=true&amp;lang=en-us&amp;page_show_url=%2Fphotos%2F49589633%40N02%2Falbums%2F72157628437797763%2Fshow&amp;page_show_back_url=%2Fphotos%2F49589633%40N02%2Falbums%2F72157628437797763%2F&amp;user_id=49589633@N02&amp;tags=Origami" /> <param name="allowFullScreen" value="false" /> <param name="src" value="https://www.flickr.com/apps/slideshow/show.swf?v=71649" /> <embed width="800" height="800" type="application/x-shockwave-flash" src="https://www.flickr.com/apps/slideshow/show.swf?v=71649" flashvars="offsite=true&amp;lang=en-us&amp;page_show_url=%2Fphotos%2F49589633%40N02%2Falbums%2F72157628437797763%2Fshow&amp;page_show_back_url=%2Fphotos%2F49589633%40N02%2Falbums%2F72157628437797763%2F&amp;user_id=49589633@N02&amp;tags=Origami" allowFullScreen="false" /> </object><br /><small>Created with <a href="http://www.flickrslideshow.com">flickr slideshow</a>.</small></div>
+
       </div>
     </div>
     <div class="footer"></div>
