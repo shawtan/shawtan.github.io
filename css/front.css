@@ -193,6 +193,14 @@ main {
 }
 
 .project a {
+	background-color: #000;
+}
+
+.project img:hover {
+	opacity: 0.8;
+}
+
+.project a {
 	position: relative;
 	display: inline;
 	border-style: none;
